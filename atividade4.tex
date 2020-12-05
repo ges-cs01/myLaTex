@@ -1,0 +1,205 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\usepackage[mathscr]{euscript}
+
+\begin{document}
+\author{Guilherme Elui de Souza, \textnumero{11796152} }
+\title{ACH2013 - Matemática Discreta \\
+\large Prof. Karla Roberta Pereira Sampaio Lima \\
+\large Atividade V}
+\maketitle
+
+\section*{Seção 4.1.}
+\subsection*{Exercício 10}
+\begin{enumerate}[label=\textbf{\alph*.}]
+\item 2 
+\item 2
+\item 1
+\item 3
+\item 3
+\end{enumerate}
+\subsection*{Exercício 16}
+\begin{enumerate}[label=\textbf{\alph*.}]
+\item V
+\item F, \quad a relação $\in$ deve ser entre um elemento e um conjunto.
+\item F, \quad a relação $\in$ deve ser entre um elemento e um conjunto.
+\item V
+\item F, \quad a relação $\in$ deve ser entre um elemento e um conjunto.
+\item F, \quad $B$ não possui elementos. $C$ possui um elemento, logo $B \neq C$.
+\item V
+\item F, \quad a relação $\in$ deve ser entre um elemento e um conjunto.
+\item F, \quad $\{{\varnothing}\} \in D$ e $\{{\varnothing}\} \not\in A$
+\end{enumerate}
+\subsection*{Exercício 20}
+$\cdot$ Resolvendo-se as equações:
+\begin{center}
+$\cos(\frac{x}{2})=0=\cos(\frac{\pi}{2})=cos(\frac{3\pi}{2})=\cos(\frac{5\pi}{2})= ... =\cos(\frac{\pi}{2} + k\pi)$, $k\in \mathbb{N}$ \\
+\vspace{0.5cm}
+$\sin(x)=0=\sin(\pi)=sin(2\pi)=\sin(3\pi)= ... =\sin(k\pi)$, $k\in \mathbb{N}$ \\
+\end{center}
+$\cdot$ O conjunto solução $A$ da primeira equação é:
+\begin{center}
+$A= \{\pi,3\pi,5\pi,...\}$
+\end{center}
+$\cdot$ O conjunto solução $B$ da segunda equação é:
+\begin{center}
+$B = \{0,\pi,2\pi,3\pi,...\}$
+\end{center}
+$\cdot$ Logo é possível observar que $A \subseteq B$
+\subsection*{Exercício 22}
+\begin{enumerate}[label=\textbf{\alph*.}]
+\item F, \quad $(\varnothing \subset A)$
+\item F, \quad $(\varnothing \neq \{\varnothing\}) $
+\item V
+\item F, \quad $A$ e $C$ podem ser iguais e ambos diferentes de $B$
+\item F, \quad $A=\{0\}, B=\{\{0\},1\}, C=\{\{0\},3\}$
+\end{enumerate}
+\subsection*{Exercício 26}
+$\cdot$ Prova por indução \\ \\
+$\cdot$ \textit{Caso base:} $n=3$. \\ Um conjunto $A = \{a,b,c\}$ com três elementos tem exatamente \textbf{um} subconjunto com esses mesmos três elementos.
+\begin{center}
+$n(n-1)(n-2)/6 \to 3(3-1)(3-2)/6 = 1$
+\end{center}
+$\cdot$ \textit{Hipótese indutiva:} \\ Assumir que um conjunto com $k$ elementos possui $k(k-1)(k-2)/6$ subconjuntos com exatamente três elementos.\\ \\
+$\cdot$ \textit{Passo indutivo:} queremos provar a propriedade verdadeira para $k+1$. \\
+Seja portanto $x$ um membro de um conjunto com $k+1$ elementos. Se retirarmos $x$ desse conjunto teremos um conjunto com $k$ elementos, e que por hipótese indutiva possui $k(k-1)(k-2)/6$ subconjuntos com três elementos. O número de subconjuntos de três elementos que incluem $x$ pode ser obtido atráves do cálculo do número de subconjuntos com dois elementos (bastaria em seguida incluir $x$ aos subconjuntos). Conforme o exercício anterior, esse valor é dado por $k(k-1)/2$. Sendo assim, o número total de subconjuntos com três elementos pode ser obtido somando subconjuntos que não incluem x, com aqueles que incluem $x$. Logo,
+\begin{center}
+$\frac{k(k-1)(k-2)}{6} + \frac{k(k-1)}{2} = \frac{k(k-1)(k-2)}{6} + \frac{3k(k-1)}{6} = $
+\end{center}
+\begin{center}
+$= \frac{k(k-1)[(k-2)+(3)]}{6} = \frac{k(k-1)(k+1)}{6}$
+\end{center}
+\qed
+
+\subsection*{Exercício 35}
+\begin{equation*}
+\begin{split}
+x\in A & \iff \{x\}\in \wp (A) \\
+\wp (A) = \wp (B) & \implies \{x\} \in \wp (B) \\
+& \iff x \in B \\
+& \implies A \subseteq B
+\end{split}
+\end{equation*} \\
+\begin{equation*}
+\begin{split}
+x\in B & \iff \{x\}\in \wp (B) \\
+\wp (A) = \wp (B) & \implies \{x\} \in \wp (A) \\
+& \iff x \in A \\
+& \implies B \subseteq A
+\end{split}
+\end{equation*}
+Sendo assim,
+\begin{center}
+$A \subseteq B \,\land\, B \subseteq A \implies A = B$
+\end{center}
+
+\subsection*{Exercício 39}
+\begin{enumerate}[label=\textbf{\alph*.}]
+\item Operação binária.
+\item Operação binária.
+\item Operação binária.
+\item Não é uma operação, $\ln x$ não é definida para $x\leq 0$.
+\end{enumerate}
+\subsection*{Exercício 41}
+\begin{enumerate}[label=\textbf{\alph*.}]
+\item Não é uma operação, $x=0$ não é definida.
+\item Operação binária.
+\item Operação unária.
+\item Operação binária.
+\end{enumerate}
+\subsection*{Exercício 55}
+$A=$ números inteiros múltiplos de $3$ e maiores que $4$\\
+$B=$ números inteiros pares \\
+$C=$ números inteiros no intervalo fechado entre $10$ e $-10$
+\begin{enumerate}[label=\textbf{\alph*.}]
+\item $B'$.
+\item $B \cap C $
+\item $A\cap B $
+\item $B'\cap C $
+\item $B'\cap C' $
+\end{enumerate}
+\subsection*{Exercício 73}
+$\cdot$ Prova por contradição \\ 
+
+$\cdot$ Assuma por absurdo que se $A \cup B = A-B$, então $B \neq \varnothing$. \\
+\begin{equation*}
+\begin{split}
+B \neq \varnothing & \iff \exists x  \in B \\
+&\implies x \in A \cup B \\
+x \in B & \implies  x\not\in A-B
+\end{split}
+\end{equation*}
+
+$\cdot$ O que contradiz a equação inicial, e portanto conclui-se que a hipótese inicial estava errada.
+
+\subsection*{Exercício 77}
+$\cdot$ Prova por contradição que $(A \subseteq B) \iff (A\cap B' = \varnothing)$. \\ 
+
+$\cdot$ $(\implies)$ Vamos assumir por absurdo $A\cap B' \neq \varnothing$
+\begin{equation*}
+\begin{split}
+A\cap B' \neq \varnothing &\iff (\exists x)(x\in A)(x\not\in B) \\
+&\iff (\exists x)(x\in A)(x\in B') \\
+&\iff (\exists x)(x\in A\cap B') \Rightarrow\Leftarrow
+\end{split}
+\end{equation*} \\
+
+$\cdot$ $(\impliedby)$ Vamos assumir por absurdo $A \not\subseteq B $
+\begin{equation*}
+\begin{split}
+A\cap B' \neq \varnothing &\iff (\exists x)(x\in A)(x\not\in B) \\
+&\iff (\exists x)(x\in A)(x\in B') \\
+&\iff (\exists x)(x\in A\cap B') \Rightarrow\Leftarrow
+\end{split} 
+\end{equation*}
+
+\section*{Seção 4.2.}
+\subsection*{Exercício 8}
+$\cdot$ Uma rota possível é $A \to B \to D$ e há $3.2=6$ modos de percorrer este caminho. A outra é $A \to C \to D$ e existem $2.4=8$ formas de percorrer este caminho. Como tratam-se de eventos disjuntos, pelo príncipio aditivo temos no total $8+6=14$ rotas possíveis.
+\subsection*{Exercício 11}
+$\cdot$ Sendo que o alfabeto possui $26$ letras e em um palíndromo com 5 letras teremos a repetição de duas delas, concluimos que existem $26^3 = 17576$ palíndromos com $5$ letras.
+\subsection*{Exercício 19}
+$\cdot$ Pelos princípio multiplicativo, $10.7.3.2.2.2 = 1680$ carros diferentes.
+\subsection*{Exercício 34}
+Como a string começa e termina com $0$, restam 6 espaços para decidir entre $0$ ou $1$. Portanto, temos $2^6 = 64$ strings possíveis.
+\subsection*{Exercício 39}
+No conjunto $A$(começam com $10$), temos $2^6$ possibilidades. No conjunto $B$($0$ na terceira posição), temos $2^7$ possibilidades. Já para o conjunto, $(A\cap B)$, temos $2^5$ possibilidades. Sendo assim, $|A\cup B| =|A|+|B|-|A\cap B| = 2^6 + 2^7 - 2^5 = 2^5(2+2^2-1)=160$.
+
+\section*{Seção 4.3.}
+\subsection*{Exercício 6}
+$A =$ gostam de rock \\
+$B =$ gostam de country \\
+$C =$ gostam de música clássica \\ \\
+$|A \cup B \cup C| = |A|+|B|+|C| - |A\cap B| - |A\cap C| -|B\cap C| + |A\cap B\cap C|$ \\
+$24 = 14 + |B| + 17 - 11 - 9 - 13  + 8 \implies |B| = 18$
+
+\subsection*{Exercício 10}
+$A=$ clientes com checking accounts \\
+$B=$ clientes com regular savings accounts \\
+$C=$ clientes com market savings accounts
+\subsubsection*{a.}
+$|A \cup B \cup C| = |A|+|B|+|C| - |A\cap B| - |A\cap C| -|B\cap C| + |A\cap B\cap C|$ \\
+$214 = 189 + 73 + 114 - 69 - 0 - |A\cap C|  + 0 \implies |A\cap C| = 93$
+\subsubsection*{b.}
+$|A-(B\cup C)| = |A| - |A\cap(B\cup C)| = |A| - |(A\cap B) \cup (A\cap C)|$ \\
+$= |A| - (|A\cap B| + |A\cap C||) = 189 - (69+93) = 27 $
+\subsection*{Exercício 14}
+$A =$ múltiplos de $3$, \quad $|A| =\lfloor \frac{1000}{3}\rfloor = 333 $ \\ \\
+$B =$ múltiplos de $7$, \quad $|B| =\lfloor \frac{1000}{7}\rfloor = 142 $ \\ \\
+$|A\cap B| = \lfloor \frac{1000}{3\,.\,7}\rfloor = 47$ \\ \\
+$|A\cup B| = |A| +|B| - |A\cap B| = 333+142-47=428  $
+\subsection*{Exercício 26}
+$\cdot$ Temos cinco somas (gavetas) possíveis: $2+20$, $4+18$, $6+16$, $8+14$ e $10+12$. O pior dos casos para obter a soma $22$, seria escolhermos cinco números e nenhum complementar que dê $22$. Por exemplo, no caso de escolhermos 2, 4, 6, 8 e 10. Entretanto, na \textbf{sexta} escolha com certeza seria formado algum dos pares que quando adicionados dão $22$. \textbf{Resposta}: $6$ números.
+
+
+\end{document}
